@@ -1,11 +1,10 @@
 <template>
     <MainNav />
-    <div class="lg:pt-5 container mx-auto lg:min-h-screen">
+    <div class="lg:pt-5 mx-auto lg:min-h-screen bg-slate-50">
         <RouterView />
     </div>
 </template>
 
 <script setup>
     import MainNav from '@/components/MainNav.vue'
-    import AboutMe from '@/views/AboutMeView.vue'
 </script>

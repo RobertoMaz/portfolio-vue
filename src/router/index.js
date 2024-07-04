@@ -10,10 +10,25 @@ const router = createRouter({
       component: HomeLayout,
       children: [
         {
+          path: '',
+          name: 'homeView',
+          component: () => import('@/views/HomeView.vue')
+        },
+        {
           path: 'about-me',
           name: 'about-me',
           component: () => import('@/views/AboutMeView.vue')
-        }
+        },
+        {
+          path: 'my-work',
+          name: 'my-work',
+          component: () => import('@/views/MyWorkView.vue')
+        },
+        {
+          path: 'contact-me',
+          name: 'contact-me',
+          component: () => import('@/views/ContactView.vue')
+        },
       ]
     }
   ]
