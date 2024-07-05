@@ -30,26 +30,25 @@
                 >
             </div>
         </div>
-        <div class="pt-20 pb-10">
+        <div class="pt-10 pb-10">
             <h2 class="text-4xl font-bold pb-5">Herramientas</h2>
             <div class="bg-white rounded-lg shadow-md">
                 <p class="text-xl font-bold pt-8 text-center">Herramientas con experiencia profesional:</p>
-                <ul class="flex gap-2 space-x-10 justify-center list-disc pt-2">
-                    <li>Javascript</li>
-                    <li>Vue 2</li>
-                    <li>Typescript</li>
-                    <li>MySQL</li>
-                    <li>Vuetify</li>
+                <ul class="flex justify-around p-6">
+                    <Card
+                        class="mx-auto flex  p-2"
+                        v-for="tool in profesionalTools"
+                        :tool="tool"
+                    />
+                   
                 </ul>
                 <p class="text-xl font-bold pt-8 text-center">Herramientas con experiencia de cursos:</p>
-                <ul class="flex gap-2 space-x-10 justify-center list-disc pt-2 pb-10">
-                    <li>ReactJS</li>
-                    <li>Vue 3</li>
-                    <li>JAVA</li>
-                    <li>MongoDB</li>
-                    <li>Firebase</li>
-                    <li>TailwindCSS</li>
-                    <li>Bootstrap</li>
+                <ul class="flex justify-around p-6">
+                    <Card
+                        class="mx-auto flex p-2"
+                        v-for="tool in coursesTools"
+                        :tool="tool"
+                    />
                 </ul>
             </div>
         </div>
@@ -57,5 +56,27 @@
 </template>
 
 <script setup>
+    import Card from '@/components/CardTools.vue'
+    import { onMounted, ref } from 'vue'
 
+    const profesionalTools = ref([])
+    const coursesTools = ref([])
+
+   
+    profesionalTools.value = [
+        'Javascript',
+        'Vue 2',
+        'Typescript',
+        'MySQL',
+        'Vuetify'
+    ]
+
+    coursesTools.value = [
+        'React',
+        'Vue 3',
+        'JAVA',
+        'MongoDB',
+        'TailwindCSS',
+        'Bootstrap'
+    ]
 </script>

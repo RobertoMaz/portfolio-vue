@@ -1,8 +1,8 @@
 <template>
-    <div class="pt-16">
-        <div class="justify-center bg-white shadow w-2/4 mx-auto">
+    <div class="p-16">
+        <div class="justify-center bg-white shadow w-2/4 mx-auto rounded-md">
             <div class=" p-5 w-full">      
-                <h1 class="text-4xl font-extrabold text-center">Contactame</h1>
+                <h1 class="text-4xl font-bold text-center">Contactame</h1>
                 <FormKit
                     type="form"
                     submit-label="Enviar"
@@ -41,11 +41,6 @@
                         type="submit"
                     >Enviar</FormKit>
                 </FormKit>
-            </div>
-            <div class="flex justify-end">
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-4xl text-blue-500">
-                    <font-awesome-icon :icon="['fab', 'linkedin']" />
-                </a>
             </div>
         </div>
     </div>
