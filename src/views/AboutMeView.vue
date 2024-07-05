@@ -31,9 +31,9 @@
             </div>
         </div>
         <div class="pt-10 pb-10">
-            <h2 class="text-4xl font-bold pb-5">Herramientas</h2>
+            <h2 class="text-4xl font-bold pb-5 flex justify-center">Herramientas que manejo</h2>
             <div class="bg-white rounded-lg shadow-md">
-                <p class="text-xl font-bold pt-8 text-center">Herramientas con experiencia profesional:</p>
+                <p class="text-xl font-bold pt-8 pl-8 text-start">Herramientas con experiencia profesional:</p>
                 <ul class="flex justify-around p-6">
                     <Card
                         class="mx-auto flex  p-2"
@@ -42,7 +42,7 @@
                     />
                    
                 </ul>
-                <p class="text-xl font-bold pt-8 text-center">Herramientas con experiencia de cursos:</p>
+                <p class="text-xl font-bold pt-8 pl-8 text-start">Herramientas con experiencia de cursos:</p>
                 <ul class="flex justify-around p-6">
                     <Card
                         class="mx-auto flex p-2"
@@ -77,6 +77,7 @@
         'JAVA',
         'MongoDB',
         'TailwindCSS',
-        'Bootstrap'
+        'Bootstrap',
+        'firebase'
     ]
 </script>

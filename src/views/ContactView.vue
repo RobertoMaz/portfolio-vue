@@ -14,7 +14,7 @@
                         type="text"
                         label="Nombre"
                         name="name"
-                        placeholder="Nombre*"
+                        placeholder="Tu Nombre Completo*"
                         validation="required"
                         :validation-messages="{ required: 'El Nombre es Obligatorio' }"
                     />
