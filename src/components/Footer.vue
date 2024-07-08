@@ -1,5 +1,5 @@
 <template>
-    <footer class="p-5 bg-gray-700">
+    <footer class="p-5 bg-gray-700 relative z-20">
         <div class="justify-around  w-full flex">
             <div class="grid grid-cols-2 gap-3 text-white">
                

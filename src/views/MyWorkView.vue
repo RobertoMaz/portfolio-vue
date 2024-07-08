@@ -1,7 +1,7 @@
 <template>
-    <div class="pt-20">
-        <h1 class="text-4xl font-bold text-center">Mis Trabrajos</h1>
-        <div class="p-10 space-y-5">
+    <div class="pt-20 relative z-10">
+        <h1 class="text-4xl font-bold text-center text-white pb-2">Mis Trabrajos</h1>
+        <div class="px-4 p-2 space-y-5">
             <CardWorks 
                 v-for="work in works"
                 :work="work"

@@ -1,5 +1,5 @@
 <template>
-    <main class="container mx-auto">
+    <main class="container mx-auto relative z-10">
         <div class="pt-16 flex gap-2 justify-between">
             <div class="w-2/3 pt-4 px-8 rounded-lg bg-white shadow-md">
                 <h2 class="text-xl font-bold">Roberto Mazzarello</h2>
@@ -30,13 +30,13 @@
                 >
             </div>
         </div>
-        <div class="pt-10 pb-10">
-            <h2 class="text-4xl font-bold pb-5 flex justify-center">Herramientas que manejo</h2>
+        <div class="pt-10 pb-5">
+            <h2 class="text-4xl font-bold pb-5 flex justify-center text-white">Herramientas que manejo</h2>
             <div class="bg-white rounded-lg shadow-md">
-                <p class="text-xl font-bold pt-8 pl-8 text-start">Herramientas con experiencia profesional:</p>
+                <p class="text-xl font-bold pt-6 pl-8 text-start">Herramientas con experiencia profesional:</p>
                 <ul class="flex justify-around p-6">
                     <Card
-                        class="mx-auto flex  p-2"
+                        class="mx-auto flex p-2"
                         v-for="tool in profesionalTools"
                         :tool="tool"
                     />

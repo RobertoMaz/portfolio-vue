@@ -1,9 +1,10 @@
 <template>
-    <div class="p-16">
+    <div class="pt-14 relative z-10">
         <div class="justify-center bg-white shadow w-2/4 mx-auto rounded-md">
             <div class=" p-5 w-full">      
                 <h1 class="text-4xl font-bold text-center">Contactame</h1>
                 <FormKit
+                    id="contactForm"
                     type="form"
                     submit-label="Enviar"
                     incomplete-message="No se pudo enviar el correo"
@@ -47,9 +48,33 @@
 </template>
 
 <script setup>
+    import { inject } from 'vue'
+    import { reset } from '@formkit/vue';
+
+    const toast = inject('toast')
+
 
     const submitHandler = async (formData) => {
 
-        console.log(formData)
+        try {
+            const serviceID = import.meta.env.VITE_SERVICE_ID
+            const templateID = import.meta.env.VITE_TEMPLATE_ID
+
+            const result = await emailjs.send(serviceID, templateID, formData)
+    
+            if(result.status === 200) {
+                toast.open({
+                    message: 'El formulario se envio correctamente.',
+                    type: 'success'
+                })
+                reset('contactForm')
+            }
+        } catch (error) {
+            console.log(error)
+            toast.open({
+                message: 'Hubo un error, no se pudo enviar el formulario. Intentelo de nuevo.',
+                type: 'error'
+            })
+        }
     }
 </script>
