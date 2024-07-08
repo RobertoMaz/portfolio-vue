@@ -1,7 +1,7 @@
 <template>
     <div class="containenr h-screen">
         <img 
-            src="../assets/img/fondo1.avif" 
+            src="../assets/img/fondo.avif" 
             alt="Imagen de fondo" 
             class="absolute inset-0"
             :class="imageClasses"    
