@@ -23,25 +23,7 @@
             imageSrc: 'barberiaapp',
             title: 'App para barberia',
             paragraph: 'Esta app tiene una conexion a una ApiRest la cual te permite manejar un sistema de logueo, recupero de password y confirmacion de email. Ademas de poder almacenar mediante un CRUD las citas que el usuario realice.   Maneja un sistema de usuario comun y usuario ADMIN, tiene vistas para el ADMIN donde podra ver las citas del dia y posteriores en orden. Para el usuario vistas donde puede elegir el tipo de servicio, dia y hora del turno.'
-            },
-            {
-            urlWeb : 'https://front-barber-shop.vercel.app/auth/login',
-            imageSrc: 'barberiaapp',
-            title: 'App para barberia',
-            paragraph: 'Esta app tiene una conexion a una ApiRest la cual te permite manejar un sistema de logueo, recupero de password y confirmacion de email. Ademas de poder almacenar mediante un CRUD las citas que el usuario realice.   Maneja un sistema de usuario comun y usuario ADMIN, tiene vistas para el ADMIN donde podra ver las citas del dia y posteriores en orden. Para el usuario vistas donde puede elegir el tipo de servicio, dia y hora del turno.'
-            },
-            {
-            urlWeb : 'https://front-barber-shop.vercel.app/auth/login',
-            imageSrc: 'barberiaapp',
-            title: 'App para barberia',
-            paragraph: 'Esta app tiene una conexion a una ApiRest la cual te permite manejar un sistema de logueo, recupero de password y confirmacion de email. Ademas de poder almacenar mediante un CRUD las citas que el usuario realice.   Maneja un sistema de usuario comun y usuario ADMIN, tiene vistas para el ADMIN donde podra ver las citas del dia y posteriores en orden. Para el usuario vistas donde puede elegir el tipo de servicio, dia y hora del turno.'
-            },
-            {
-            urlWeb : 'https://front-barber-shop.vercel.app/auth/login',
-            imageSrc: 'barberiaapp',
-            title: 'App para barberia',
-            paragraph: 'Esta app tiene una conexion a una ApiRest la cual te permite manejar un sistema de logueo, recupero de password y confirmacion de email. Ademas de poder almacenar mediante un CRUD las citas que el usuario realice.   Maneja un sistema de usuario comun y usuario ADMIN, tiene vistas para el ADMIN donde podra ver las citas del dia y posteriores en orden. Para el usuario vistas donde puede elegir el tipo de servicio, dia y hora del turno.'
-            },
+            }
         ]
     })
 

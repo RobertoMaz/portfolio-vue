@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full relative">
+    <div class="h-full relative overflow-hidden">
         <img 
             src="../assets/img/fondo.avif" 
             alt="Imagen de fondo" 
