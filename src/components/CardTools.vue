@@ -29,7 +29,7 @@
         if(props.tool == 'Vue 2' || props.tool == 'Vue 3'){
             imageSrc.value = 'vue'
         } else {
-            imageSrc.value = props.tool.toLocaleLowerCase()
+            imageSrc.value = props.tool.toLowerCase()
         }
  
 </script>
