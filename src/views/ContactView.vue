@@ -15,7 +15,7 @@
                         type="text"
                         label="Nombre"
                         name="name"
-                        placeholder="Tu Nombre Completo*"
+                        placeholder="Tu Nombre Completo *"
                         validation="required"
                         :validation-messages="{ required: 'El Nombre es Obligatorio' }"
                     />
@@ -23,7 +23,7 @@
                         type="email"
                         label="Email"
                         name="email"
-                        placeholder="Email*"
+                        placeholder="Email *"
                         validation="required|email"
                         :validation-messages="{
                             required: 'El email es obligatorio',
@@ -34,7 +34,7 @@
                         type="textarea"
                         label="TextArea"
                         name="textarea"
-                        placeholder="Escribe tu mensaje aquí*"
+                        placeholder="Escribe tu mensaje aquí *"
                         validation="required"
                         :validation-messages="{ required: 'El mensaje no puede estar vacio' }"
                     />
