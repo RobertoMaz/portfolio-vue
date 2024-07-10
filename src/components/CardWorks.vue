@@ -4,7 +4,7 @@
     >
         <a :href="work.urlWeb" target="_blank" rel="noopener noreferrer">
             <img 
-                :src="`../src/assets/img/${work.imageSrc}.png`"
+                :src="`/img/${work.imageSrc}.jpg`"
                 :alt="work.imageSrc"
                 class="p-5"
             >

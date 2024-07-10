@@ -78,6 +78,6 @@
         'MongoDB',
         'TailwindCSS',
         'Bootstrap',
-        'firebase'
+        'Firebase'
     ]
 </script>
