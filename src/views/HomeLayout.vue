@@ -1,9 +1,9 @@
 <template>
-    <div class="h-screen relative">
+    <div class="h-full relative">
         <img 
             src="../assets/img/fondo.avif" 
             alt="Imagen de fondo" 
-            class="absolute inset-0"
+            class="absolute"
             :class="imageClasses"    
         >
         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
