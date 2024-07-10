@@ -3,7 +3,7 @@
 
         <div class="bg-slate-100 rounded-lg shadow-md ">
             <img 
-                :src="`./src/assets/img/${imageSrc}.png`" 
+                :src="`../assets/img/${imageSrc}.png`" 
                 :alt="props.tool" 
                 class="w-10" 
                 :class="{'w-8 h-8 mt-2': props.tool == 'Vuetify'}"    

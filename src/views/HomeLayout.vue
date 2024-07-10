@@ -1,5 +1,5 @@
 <template>
-    <div class="containenr h-screen">
+    <div class="h-screen relative">
         <img 
             src="../assets/img/fondo.avif" 
             alt="Imagen de fondo" 
@@ -7,6 +7,7 @@
             :class="imageClasses"    
         >
         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        
         <MainNav />
         <div class="lg:pt-5 mx-auto lg:min-h-screen bg-slate-50">
             <RouterView />
