@@ -1,7 +1,7 @@
 <template>
-    <footer class="p-5 bg-gray-700 relative z-20">
-        <div class="justify-around  w-full flex">
-            <div class="grid grid-cols-2 gap-3 text-white">
+    <footer class="p-5 bg-gray-700 lg:relative lg:z-20">
+        <div class="justify-around  lg:w-full lg:flex">
+            <div class="pl-5 grid grid-cols-2  gap-2 lg:gap-3 text-white">
                
                     <RouterLink to="/">
                         - Home
@@ -17,7 +17,7 @@
                     </RouterLink>
         
             </div>
-            <div class="flex gap-10 pt-2">
+            <div class="flex gap-10 pt-5 justify-center lg:pt-2">
                 <a href="https://www.linkedin.com/in/roberto-mazzarello/" target="_blank" rel="noopener noreferrer" class="text-4xl text-blue-500">
                     <font-awesome-icon :icon="['fab', 'linkedin']" />
                 </a>
