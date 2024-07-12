@@ -15,7 +15,7 @@
           </button>
         </div>   
       </div>
-      <nav v-if="menuOpen" @click="toggleMenu" class="p-5 bg-gray-700 text-blue-500 space-y-3">
+      <nav v-if="menuOpen" @click="toggleMenu" class="p-5 absolute w-full bg-gray-700 text-blue-500 space-y-3">
         <RouterLink to="/" class="block py-2 hover:text-blue-800 text-center">Inicio</RouterLink>
         <RouterLink to="about-me" class="block py-2 hover:text-blue-800 text-center">Acerca de mi</RouterLink>
         <RouterLink to="my-work" class="block py-2 hover:text-blue-800 text-center">Mis trabajos</RouterLink>
@@ -35,7 +35,6 @@
 
     const toggleMenu = () => {
         menuOpen.value = !menuOpen.value
-        console.log(menuOpen.value)
     }
 
   </script>

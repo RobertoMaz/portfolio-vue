@@ -1,15 +1,10 @@
 <script setup>
 
-import { useNavStore } from '@/stores/navStore'
-import { computed } from 'vue'
+    import { useStore } from '@/stores/store'
 
-const navStore = useNavStore()
+    const store = useStore()
 
-const getLinkClass = (routeName) => {
-  return computed(() => {
-    return navStore.activeRoute === routeName ? 'text-blue-700' : 'hover:text-blue-700'
-  }).value
-}
+    
 </script>
 
 <template>
@@ -21,25 +16,25 @@ const getLinkClass = (routeName) => {
             <RouterLink to="/">
                 <p 
                     class="hover:text-blue-700"
-                    :class="getLinkClass('homeView')"
+                    :class="store.getLinkClass('homeView')"
                 >inicio</p>
             </RouterLink>
             <RouterLink to="about-me">
                 <p 
                     class="hover:text-blue-700"
-                    :class="getLinkClass('about-me')"
+                    :class="store.getLinkClass('about-me')"
                 >Acerca de mi</p>
             </RouterLink>
             <RouterLink to="my-work">
                 <p 
                     class="hover:text-blue-700"
-                    :class="getLinkClass('my-work')"  
+                    :class="store.getLinkClass('my-work')"  
                 >mis trabajos</p>
             </RouterLink>
             <RouterLink to="contact-me">
                 <p 
                     class="hover:text-blue-700"
-                    :class="getLinkClass('contact-me')"
+                    :class="store.getLinkClass('contact-me')"
                 >contacto</p>
             </RouterLink>
         </nav>

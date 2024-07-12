@@ -1,6 +1,6 @@
 <template>
-    <div class="pt-14 relative z-10">
-        <div class="justify-center bg-white shadow w-2/4 mx-auto rounded-md">
+    <div class="px-5 pt-14 relative z-10">
+        <div class="justify-center bg-white shadow lg:w-2/4 mx-auto rounded-md">
             <div class=" p-5 w-full">      
                 <h1 class="text-4xl font-bold text-center">Contactame</h1>
                 <FormKit
