@@ -1,7 +1,7 @@
 <template>
     <div class="relative h-screen lg:h-full lg:overflow-hidden">
         <img 
-            src="../assets/img/fondo.avif" 
+            src="../assets/img/fondo.jpg" 
             alt="Imagen de fondo" 
             class="absolute object-cover"
             :class="store.imageClasses"    
